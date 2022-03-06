@@ -117,7 +117,7 @@ under the License.
     <server>
       <id>nexusdeploymentrepo</id>
       <username>admin</username>
-      <password>admin</password>
+      <password>admin123</password>
     </server>
     
 
@@ -247,7 +247,7 @@ under the License.
        <repository>
          <id>nexus-snapshot-repo</id>
          <name>your custom repo</name>
-         <url>http://35.188.22.253:8081/repository/maven-snapshots/</url>
+         <url>http://34.125.147.30:8081/repository/maven-snapshots/</url>
        </repository>
 	   
      </repositories>
@@ -258,7 +258,7 @@ under the License.
        <repository>
          <id>nexus-release-repo</id>
          <name>your custom repo</name>
-         <url>http://35.202.104.9:8081/repository/maven-releases/</url>
+         <url>http://34.125.147.30:8081/repository/maven-releases/</url>
        </repository>
      </repositories>
    </profile>
