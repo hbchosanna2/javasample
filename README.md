@@ -15,3 +15,26 @@ Publishing artifact to Nexus snapshot and release repo using maven.
 10. Run mvn clean deploy, this will publish to snapshot repo
 11. Change the version from 1.0-Snapshot to 1.0
 12. Run mvn clean deploy -P release, it will deploy it to release repo
+
+
+
+
+
+To specify sonar custom settings
+mvn clean sonar:sonar -Dsonar.host.url=http://192.168.56.101:9000 -Dsonar.login=admin -Dsonar.password=admin123
+
+To get dependency tree of your project
+mvn dependency:tree
+
+To get all plugins used of your project
+mvn -B dependency:resolve-plugins
+
+To get latest version of plugin
+mvn versions:display-plugin-updates
+
+Assume you need to use different local repository
+mvn install -Dmaven.repo.local=/alternate/repo/location
+
+If you want to skip test cases
+mvn clean install -Dmaven.test.skip=true 
+
